@@ -1,0 +1,11 @@
+div{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  top: 0;
+}
+body{
+  position: relative;
+  width: 100%;
+}
