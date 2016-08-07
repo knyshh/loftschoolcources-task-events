@@ -21,16 +21,12 @@
     function generatedDiv(){
         var div = document.createElement('div');
         var col = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
-        var  width = (Math.floor(Math.random()*600));
-        var height = (Math.floor(Math.random()*600));
-
-        console.log('width'+width);
-        console.log('height'+height);
-
+        var  width = (Math.floor(Math.random()*400));
+        var height = (Math.floor(Math.random()*400));
         var xy = getRandomPosition(div);
-        div.style.background = col;
-        div.style.width = 300 ;
-        div.style.height = 400 ;
+        div.setAttribute("style","background:"+col);
+        div.setAttribute("style","width:"+width+"px;height:"+height+"px");
+        div.style.backgroundColor = col;
         document.body.appendChild(div);
         div.style.top = xy[0] + 'px';
         div.style.left = xy[1] + 'px';
